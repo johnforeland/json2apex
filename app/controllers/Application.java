@@ -30,9 +30,8 @@ import play.templates.TemplateLoader;
 
 public class Application extends Controller {
 
-	public  Result index(String json, String className) {
-		if (className == null) className = "JSON2Apex";
-		return ok(json, className);
+	public static Result index() {
+		return ok("", "JSON2Apex");
 	}
 	
  	public static void makeApex(@Required String json, @Required String className, @Required boolean createParseCode) {
