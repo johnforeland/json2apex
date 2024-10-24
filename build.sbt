@@ -8,3 +8,7 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 scalaVersion := "2.11.7"
 
 libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-compiler" % _ )
+
+javaHome.in(Compile) := {
+  Some(file(sys.props("java.home")).getParentFile)
+}
