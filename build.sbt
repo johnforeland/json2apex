@@ -5,7 +5,7 @@ version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.12.20"
+scalaVersion := "2.10.5"
 
 // libraryDependencies += jdbc
 // libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test
