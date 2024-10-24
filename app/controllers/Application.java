@@ -27,9 +27,9 @@ import play.templates.TemplateLoader;
 
 public class Application extends Controller {
 
-	public static void index(String json, String className) {
+	public static Result index(String json, String className) {
 		if (className == null) className = "JSON2Apex";
-   render(Template("index.html").params(json, className).render());
+		return ok(json, className);
 	}
 	
  	public static void makeApex(@Required String json, @Required String className, @Required boolean createParseCode) {
@@ -89,6 +89,6 @@ public class Application extends Controller {
  	
  	static String applyTemplate(String templateName, Map<String, Object> args) {
         Template template = TemplateLoader.load(templateName);
-        return template.render(args);
+        return template.return ok(args);
  	}
 }
