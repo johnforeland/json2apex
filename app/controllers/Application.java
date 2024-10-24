@@ -18,15 +18,6 @@ import org.codehaus.jackson.map.ObjectMapper;
 import play.*;
 import play.mvc.*;
 
-import play.data.validation.Required;
-import play.data.validation.Validation;
-import play.mvc.Controller;
-import play.mvc.Http;
-import play.mvc.Scope;
-import play.mvc.results.RenderTemplate;
-import play.templates.Template;
-import play.templates.TemplateLoader;
-
 public class Application extends Controller {
 
 	public static Result index() {
