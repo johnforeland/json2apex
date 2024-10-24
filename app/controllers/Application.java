@@ -88,8 +88,8 @@ public class Application extends Controller {
  		}
  	}
  	
- 	static Result applyTemplate(String templateName, Map<String, Object> args) {
+ 	static String applyTemplate(String templateName, Map<String, Object> args) {
         Template template = TemplateLoader.load(templateName);
-        return  ok(args);
+        return template.return ok(args);
  	}
 }
