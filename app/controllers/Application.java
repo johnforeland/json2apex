@@ -24,14 +24,13 @@ import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Scope;
 import play.mvc.results.RenderTemplate;
-import play.mvc.results.Result;
 import play.templates.Template;
 import play.templates.TemplateLoader;
 
 public class Application extends Controller {
 
-	public static void index() {
-		render("", "JSON2Apex");
+	public static Result index() {
+		return ok("", "JSON2Apex");
 	}
 	
  	public static void makeApex(@Required String json, @Required String className, @Required boolean createParseCode) {
