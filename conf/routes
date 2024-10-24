@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-GET     /                                       controllers.Application.index(json ?= null, className ?= null)
+GET     /                                       controllers.Application.index
 #* GET		/makeApex								controllers.Application.makeApex
 #* POST 	/makeApex								controllers.Application.makeApex
 
