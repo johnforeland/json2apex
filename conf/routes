@@ -3,9 +3,9 @@
 # ~~~~
 
 # Home page
-GET     /                                       controllers.Application.index(null, null)
-GET		/makeApex								controllers.Application.makeApex
-POST 	/makeApex								controllers.Application.makeApex
+GET     /                                       controllers.Application.index(json: Option[String] = None, className: Option[String] = None)
+#* GET		/makeApex								controllers.Application.makeApex
+#* POST 	/makeApex								controllers.Application.makeApex
 
 # Catch all
 #*       /{controller}/{action}                  {controller}.{action}
