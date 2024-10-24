@@ -3,9 +3,9 @@
 # ~~~~
 
 # Home page
-GET     /                                       Application.index
-GET		/makeApex								Application.makeApex
-POST 	/makeApex								Application.makeApex
+GET     /                                       controllers.Application.index
+GET		/makeApex								controllers.Application.makeApex
+POST 	/makeApex								controllers.Application.makeApex
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
