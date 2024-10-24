@@ -3,9 +3,9 @@
 # ~~~~
 
 # Home page
-GET     /                                       controllers.Application.index
-GET		/makeApex								controllers.Application.makeApex
-POST 	/makeApex								controllers.Application.makeApex
+GET     /                                       views.Application.index
+GET		/makeApex								views.Application.makeApex
+POST 	/makeApex								views.Application.makeApex
 
 # Catch all
 #*       /{controller}/{action}                  {controller}.{action}
