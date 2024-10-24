@@ -90,6 +90,6 @@ public class Application extends Controller {
  	
  	static Result applyTemplate(String templateName, Map<String, Object> args) {
         Template template = TemplateLoader.load(templateName);
-        return template.return ok(args);
+        return  ok(args);
  	}
 }
